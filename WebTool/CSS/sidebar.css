@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+#myScrollspy {
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    position:fixed;
+    width: 250px;
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #2f4158;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#myScrollspy::-webkit-scrollbar{
+    display: none;
+}
+
+#myScrollspy.active{
+    margin-left: -250px;
+}
+
+#myScrollspy .sidebar-nav{
+    top:25%;
+}
+
+.bs-docs-sidebar .main-menu{
+    /*padding-left: 20px;*/
+    position: absolute;
+    top: 0;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    position: relative;
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-nav li:hover:before,
+.sidebar-nav li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition:  width .2s ease-in;
+    -o-transition:  width .2s ease-in;
+    transition: width .2s ease-in;
+
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #ddd;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a:focus,
+.sidebar-nav li.open a:hover,
+.sidebar-nav li.open a:focus{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.bs-docs-sidebar .nav>.active>a,.bs-docs-sidebar .main-menu>li>a:hover,
+.bs-docs-sidebar .main-menu>li>a:focus {
+    color: #b0b0b0;
+    background-color: transparent;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* all active links */
+.bs-docs-sidebar .nav>.active>a, .bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a, .bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
+}

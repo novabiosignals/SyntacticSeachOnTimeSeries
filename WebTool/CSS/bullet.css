@@ -1,0 +1,56 @@
+.bullet-anchor-menu .bullet-anchor{
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    margin-top: -50px;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 200ms;
+    -moz-transition: opacity 200ms;
+    -o-transition: opacity 200ms;
+    -webkit-transition: opacity 200ms;
+}
+
+.bullet-anchor-menu .bullet-anchor>li>a:before{
+
+    display: block;
+    background-color: #d0c7d8;
+    content: " ";
+    width: 9px;
+    height: 9px;
+    margin: -3px 0 0 -3px;
+    overflow: hidden;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: background-color 200ms;
+    -moz-transition: background-color 200ms;
+    -o-transition: background-color 200ms;
+    -webkit-transition: background-color 200ms; }
+
+
+.bullet-anchor-menu .bullet-anchor>li>a{
+    display: inline-block;
+    width:17px;
+    height:17px;
+    padding: 6px;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent; /*transparent*/
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+
+/*active and hover links*/
+.bullet-anchor-menu .nav>.active>a,.bullet-anchor-menu .bullet-anchor>li>a:hover,
+.bullet-anchor-menu .bullet-anchor>li>a:focus {
+    border-color: #848484;
+}
+
+.bullet-anchor-menu .nav>.active>a:before,.bullet-anchor-menu .bullet-anchor>li>a:hover:before,
+.bullet-anchor-menu .bullet-anchor>li>a:focus:before {
+    background: #000000;
+}

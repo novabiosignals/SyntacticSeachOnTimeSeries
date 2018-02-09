@@ -1,0 +1,10 @@
+One important remark is that this module is not capable of measuring the difficulty of a regex.
+Therefore one attempt has been made in which the Halstead measures are applyed to regex's.
+
+The list of operators considered:
+- '?'
+- '+?', '*?'
+- +, *
+- (?=), (?<=), (?!<), (?!=)
+
+If any other operator is used, please add it to the list.

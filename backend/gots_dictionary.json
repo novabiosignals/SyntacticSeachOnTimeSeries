@@ -1,0 +1,17 @@
+{
+  "pre_processing": {
+            "☱": "highpass",
+            "☲": "bandpass",
+            "☴": "lowpass",
+            "~": "smooth",
+            "∥": "abs",
+            "⊚": "stat_white"
+  },
+  "connotation": {
+            "⇞": "AmpC",
+            "†": "DiffC",
+            "⇵": "ampDiffC",
+            "‡": "Diff2C",
+            "↕": "RiseAmp"
+  }
+}

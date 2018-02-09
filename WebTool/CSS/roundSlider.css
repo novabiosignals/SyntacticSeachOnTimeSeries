@@ -1,0 +1,20 @@
+.circumference {
+    fill: #fff;
+    stroke: rgba(146, 166, 249, 0.58);
+    stroke-width: 5px;
+}
+
+.dot circle:hover {
+    cursor: pointer;
+}
+
+.dot circle {
+    fill: lightsteelblue;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+.dot circle.dragging {
+    fill: #f17c7c;
+    stroke: brown;
+}

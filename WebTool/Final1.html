@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Title</title>
+    <!--Latest compiled Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/page.css" type="text/css">
+    <link rel="stylesheet" href="CSS/sidebar.css" type="text/css">
+    <link rel="stylesheet" href="CSS/bullet.css" type="text/css">
+    <link rel="stylesheet" href="CSS/hamburgercross.css" type="text/css">
+    <link rel="stylesheet" href="CSS/trySSTS.css" type="text/css">
+    <link rel="stylesheet" href="CSS/roundSlider.css" type="text/css">
+    <link rel="stylesheet" href="CSS/ToggleButton.css" type="text/css">
+    <link rel="stylesheet" href="CSS/HoverTip.css" type="text/css">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--D3-->
+    <script src="fili.js-master/dist/fili.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v0.4.min.js"></script>
+    <script src='https://npmcdn.com/babel-core@5.8.34/browser.min.js'></script>
+    <!--Contact template-->
+    <script src="JS/jqBootstrapValidation.js"></script>
+    <script src="JS/contact_me.js"></script>
+    <!-- Custom Scroller Js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- JS file for sidebar -->
+    <script src="JS/Sidebar.js"></script>
+    <script src="JS/trySSTS.js"></script>
+    <script src="JS/PPMethods.js"></script>
+    <script src="JS/SCMethods.js"></script>
+    <!--JS file for charts-->
+    <script src="JS/Charts.js"></script>
+    <!--JS file for roundSlides-->
+    <script src="JS/roundSlider.js"></script>
+    <!--JS file for toggle button-->
+    <script src="JS/ToggleSlider.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navigator">
+    <!--entire wrapper-->
+    <div id="wrapper">
+        <!--nav side bar-->
+        <nav class="navigator navbar bs-docs-sidebar" id="myScrollspy" role="navigation">
+            <!--list of menus-->
+            <ul class="main-menu nav nav-stacked sidebar-nav" id="sidebar">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Brand
+                    </a>
+                </li>
+                <li><a class="active" href="#Home">HOME</a>
+                    <!--<ul class="nav nav-stacked">-->
+                    <!--<li><a href="#GroupASub1">Home</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#About">ABOUT</a>
+                    <!--<ul class="nav nav-stacked">-->
+                    <!--<li><a href="#GroupBSub1">About</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#Examples">EXAMPLES</a>
+                    <!--<ul class="nav nav-stacked">-->
+                    <!--<li><a href="#GroupCSub1">Examples</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#Try">TrySSTS</a>
+                    <!--<ul class="nav nav-stacked">-->
+                    <!--<li><a href="#GroupDSub1">TrySSTS</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#Team">TEAM</a>
+                    <!--<ul class="nav nav-stacked">-->
+                    <!--<li><a href="#GroupESub1">Links</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li><a href="#Contact">CONTACT US</a>
+                    <!--<ul class="nav nav-stacked">-->
+                    <!--<li><a href="#GroupFSub1">Contacts</a></li>-->
+                    <!--</ul>-->
+                </li>
+            </ul>
+        </nav>
+        <!--bullet side menu-->
+        <div class="bullet">
+            <!--navigator class to follow the spy-->
+            <nav class="navigator bullet-anchor-menu" id="myScrollspy2">
+                <ul class="bullet-anchor nav nav-stacked fixed">
+                    <li><a class="link" href="#Home"></a>
+                        <!--<ul class="nav nav-stacked">-->
+                        <!--<li><a href="#GroupASub1">Home</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li><a class="link" href="#About"></a>
+                        <!--<ul class="nav nav-stacked">-->
+                        <!--<li><a href="#GroupBSub1">About</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li><a class="link" href="#Examples"></a>
+                        <!--<ul class="nav nav-stacked">-->
+                        <!--<li><a href="#GroupCSub1">Examples</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li><a class="link" href="#Try"></a>
+                        <!--<ul class="nav nav-stacked">-->
+                        <!--<li><a href="#GroupDSub1">TrySSTS</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li><a class="link" href="#Team"></a>
+                        <!--<ul class="nav nav-stacked">-->
+                        <!--<li><a href="#GroupESub1">Links</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                    <li><a class="link" href="#Contact"></a>
+                        <!--<ul class="nav nav-stacked">-->
+                        <!--<li><a href="#GroupFSub1">Contacts</a></li>-->
+                        <!--</ul>-->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--main content-->
+        <div id="page-content-wrapper">
+            <!--div for toggle collapsible sidebar-->
+            <button type="button" class="hamburger is-open" data-toggle="offcanvas" id="sidebarCollapse">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <!--div with content-->
+            <div id="content">
+                <section id="Home" class="group">
+                    <div class="header3-container">
+                        <h3>SSTS</h3>
+                    </div>
+                    <div class="header6-container">
+                        <h6>Symbolic Search in Time Series</h6>
+                    </div>
+                    <div class="Intro">
+                        <h6>This is a site to help you in discovering a new technique for pattern search in time series.
+                            We aim for something more intuitive and faster to test in simple problems of time series analysis.
+                            Scroll down for more information, and experience this novel way of searching patterns in time series.</h6>
+                    </div>
+                </section>
+                <section id="About" class="group">
+                    <div class="title" style="width: 50px; height: auto">
+                        <h3>ABOUT</h3>
+                    </div>
+                    <div id="imageContainer1">
+                        <img src="images/about.png" id="imAbout">
+                        <h6 id="aboutText">This tools aims in reducing the gap between your reasoning and the processing
+                            tasks needed for query search in time series, turning this into a general concept
+                            that could be extended to researchers, practitioners, medical specialists and data
+                            scientists who need more intuitive methods to retrieve knowledge from data.
+                            The process uses symbols in several steps, which are presented below.</h6>
+                        <hr class="separator">
+                    </div>
+                    <div class="row">
+                        <div class="step" id="ProcessingText">
+                            <img src="images/about2.png" id="imProcess">
+                            <h4>Processing</h4>
+                            <hr class="separator">
+                            <h6>Load and prepare the signal for the Symbolic Connotation step.
+                                With a set of symbols, apply typical and specific signal processing methods, such
+                                as filters, normalization, modulus, among others...</h6>
+                        </div>
+                        <div class="step" id="SymConnotationText">
+                            <img src="images/about3.png" id="imSC">
+                            <h4>Symbolic Connotation</h4>
+                            <hr class="separator">
+                            <h6>Convert the signal into a symbolic representation, as a sequence
+                                of symbols that represent the major characteristics of the signal.</h6>
+                        </div>
+                        <div class="step" id="SearchText">
+                            <img src="images/about4.png" id="imSearch">
+                            <h4>Search</h4>
+                            <hr class="separator">
+                            <h6>Write a string that matches the pattern that you are looking for
+                                and the sequence of symbols of the symbolic signal. This string will be interpreted
+                                as a regular expression.</h6>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div id="AssignTutorial" style="float: left;">
+                            <h4>Learn More</h4>
+                            <h6>Learn how to use it and discover a novel way to search in time series.
+                                You can scroll down to the next section and find several tutorials with specific
+                                examples. You can also select the link to the paper written for this tool with a more
+                                formal description of the processes involved</h6>
+                        </div>
+                        <div class="linkContainer" style="width: 30%; height: 100%; float: right; text-align: center">
+                            <div class="link" style="margin-bottom: 3%; margin-left: 20%">
+                                <a id="paper" href="http://google.com" style="font-family: Lato; font-size: 20px; color:#2F3E65">Click for Paper!</a>
+                                <img src="images/paper.png" style="width:20%; height: auto">
+                            </div>
+                            <div class="link" style="margin-left: 20%">
+                                <a id="tutorial" href="#GroupC" style="font-family: Lato; font-size: 20px; text-align: left; color:#2F3E65">Click for Tutorial!</a>
+                                <img src="images/tutorial.png" style="width:20%; height: auto">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="Examples" class="group">
+                    <div class="title" style="width: 50px; height: auto">
+                        <h3>EXAMPLES</h3>
+                    </div>
+                    <div class="exContainer" style="height: 100%; display: block; overflow: hidden">
+                        <div class="row1">
+                            <div class="ex" id="ex1" style="float:left; margin-left: 5%;  margin-right: 15%; text-align: center">
+                                <h6>Plateau<br/><br/>
+                                    <p>
+                                        Detect the beginning and ending of a plateau that corresponds to a rotation above 60 degrees.
+                                    </p>
+                                </h6>
+                                <div class="circle"></div>
+                                <img class="exIm" src="images/ex1.png" style="width:80%; height: auto; padding-top: 8%">
+                            </div>
+                            <div class="ex" id="ex2" style="float:left; margin-right: 15%;">
+                                <h6>Step Detection<br/><br/>
+                                    <p>
+                                        Detect the instants in time when a right or left heel floor contact is achieved during normal straight walk.
+                                        Since the sensor is located on the right pocket,
+                                        global minima will indicate the right heel contact and local minima will correspond to left heel contact.
+                                    </p>
+                                </h6>
+                                <div class="circle"></div>
+                                <img class="exIm" src="images/ex2.png" style="width:35%; height: auto;">
+                            </div>
+                            <div class="ex" id="ex3" style="float: left; margin-right: 5%;">
+                                <h6>Systolic Phase Detection<br/><br/>
+                                    <p>
+                                        The dicrotic notch corresponds to the physiological event of the aortical valve closure,
+                                        which triggers the increase of the aortic pressure and signifies the end of the systolic phase.
+                                        Segment the systolic phase of the arterial blood pressure wave.
+                                    </p>
+                                </h6>
+                                <div class="circle"></div>
+                                <img class="exIm" src="images/ex3.png" style="width:60%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="ex" id="ex4" style="float:left; margin-left: 5%;  margin-right: 15%">
+                                <h6>ECG peak detetor<br/><br/>
+                                    <p>
+                                        Detect all the major peaks from the record.
+                                    </p>
+                                </h6>
+                                <div class="circle"></div>
+                                <img class="exIm" src="images/ex4.png" style="width:90%; height: auto">
+                            </div>
+                            <div class="ex" id="ex5" style="float:left; margin-right: 15%;">
+                                <h6>Straight Line Tracking<br/><br/>
+                                    <p>
+                                        The automatic detection of features,
+                                        such straight walks and turns can be used to look for trajectory anomalies.
+                                    </p>
+                                </h6>
+                                <div class="circle"></div>
+                                <img class="exIm" src="images/ex5.png" style="width:50%; height: auto">
+                            </div>
+                            <div class="ex" id="ex6" style="float:left; margin-right: 5%;">
+                                <h6>Stable Lifting Detection<br/><br/>
+                                    <p>
+                                        Since the first 5 seconds of the lifting exercise are unstable,
+                                        the problem involves detecting the first stable lifting step,
+                                        which occurs approximately 5 seconds after the beginning of the exercise
+                                    </p>.
+                                </h6>
+                                <div class="circle"></div>
+                                <img class="exIm" src="images/ex6.png" style="width:75%; height: auto">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section id="Try" class="group">
+                    <div class="title" style="width: 50px; height: auto">
+                        <h3>TrySSTS</h3>
+                    </div>
+                    <div class="SSTS">
+                        <div class="loading">
+                            <div class="row load">
+                                <header class="Header" onload="FileLoader">
+                                    <input type="file" id="loadFile" class="loadFile" multiple size="50" onchange="FileLoader()">
+                                </header>
+                            </div>
+                            <div class="row preview">
+                                <div id="preview">
+                                    <svg id = "visualisation0" style="width:100%; height: 25vh"></svg>
+                                </div>
+                                <div class="channels" id="channels"></div>
+                            </div>
+                        </div>
+
+                        <div class="row PP">
+                            <div class="column side PP" style="height: auto">
+                                <form name="PreProcessing" id = "formPP" class="form PP" AUTOCOMPLETE="OFF">
+
+                                    <p style="width: 75%; float:left">
+                                        PRE-PROCESSING
+                                    </p>
+                                    <div class="Wrapinput" style="width: 75%; float:left">
+                                        <input type="text" name="inputPP" id="PPfield" value="" class="entry" style="width: 100%">
+                                    </div>
+                                    <!--<pre id="ppdisplay"></pre>-->
+                                    <!--add round slider-->
+                                    <div class="wrapSlider" id="wrapSliderPP" style="width: 25%; display: block; height: 5vh; float:left">
+                                        <svg class="roundSlide" id = "PPslider"></svg>
+                                    </div>
+
+                                    <div id="rowsPP" style="width: 75%; float: left;">
+                                        <div id="row1" style="width: 100%; height: 6vh; display: inline-block; margin: 15px 3px 3px 3px">
+                                            <input type="button" name="PP" value="&#x2631" id="high_pass" class="btns pp" style="margin: 15px 3px 3px 3px">
+                                            <input type="button" name="PP" value="&#x2632" id="band_pass" class="btns pp">
+                                            <input type="button" name="PP" value="&#x2634" id="low_pass" class="btns pp">
+                                        </div>
+
+                                        <div id="row2" style="width: 100%; height: 6vh; display: inline-block; margin: 15px 3px 3px 3px">
+                                            <input type="button" name="PP" value="&#x223c" id="smooth" class="btns pp">
+                                            <input type="button" name="PP" value="&#x2225" id="abs" class="btns pp">
+                                            <input type="button" name="PP" value="&#x229a" id="white" class="btns pp">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="column big" id="vis1">
+                                <svg id="visualisation1" style="width: 100%; height:25vh"></svg>
+                            </div>
+                        </div>
+                        <!--<hr class="hLine" id="hline1">-->
+                        <div class="row SC">
+                            <div class="column side SC" style="height: auto">
+                                <form name="SymbolicConnotation" id = "formSC" class= "form SC" AUTOCOMPLETE="OFF">
+                                    <p style="width: 75%; float:left">
+                                        SYMBOLIC CONNOTATION
+                                    </p>
+                                    <div class="Wrapinput" style="width: 75%; float:left">
+                                        <input type="text" name="inputSC" id="SCfield" value="" style="width: 100%;" class="entry">
+                                    </div>
+                                    <!--<pre id="scdisplay"></pre>-->
+                                    <div class="wrapSlider" id="wrapSliderSC" style="width: 25%; display: block; max-height: 5vh; float:left">
+                                        <svg class="roundSlide" id = "SCslider" onload="startRoundSlider()"></svg>
+                                    </div>
+                                    <div id="rowsSC" style="width: 75%; float: left">
+                                        <div id="row3" style="width: 100%; height: 6vh; display: inline-block; margin: 15px 3px 3px 3px">
+                                            <input type="button" name="SC" value="&#x21de" id="ampThr" class="btns sc">
+                                            <input type="button" name="SC" value="&#x2195" id="ampDiff" class="btns sc">
+                                        </div>
+                                        <div id="row4" style="width: 100%; height: 6vh; display: inline-block; margin: 15px 3px 3px 3px">
+                                            <input type="button" name="SC" value="&#x2020" id="diff1" class="btns sc">
+                                            <input type="button" name="SC" value="&#x2021" id="diff2" class="btns sc">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="toggleSC" class="toggle" style="margin-left:1400px; margin-top:80px">
+                                <p id ="toggleText" style="float: left; margin-right: 10px">Area Plot</p>
+                                <label class="switch" style="float: left;">
+                                    <input type="checkbox">
+                                    <span class="slider round" onclick="Toggle()"></span>
+                                </label>
+                            </div>
+                            <div class="column big" id="vis2">
+                                <svg id="visualisation2" style="width: 100%; height:25vh"></svg>
+                            </div>
+
+                        </div>
+                        <!--<hr class="hLine" id="hline2">-->
+                        <div class="row S">
+                            <div class="column side S" style="height: auto">
+                                <form name="Search" class="form S" AUTOCOMPLETE="OFF">
+
+                                    SEARCH
+                                    <input type="text" name="inputS" id="Sfield" value="" style="width: 100%" class="entry">
+                                    <!--<pre id="search"></pre>-->
+                                </form>
+                            </div>
+                            <div class="column big" id="vis3">
+                                <svg id="visualisation3" style="width: 100%; height:25vh"></svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="Team" class="group">
+                    <div class="title" style="width: 50px; height: auto">
+                        <h3>TEAM</h3>
+                    </div>
+                    <div id="teamMembers">
+                        <div class="col-sm-3">
+                            <div class="team-member" href="#teamHG" data-toggle="modal">
+                                <img class="img-responsive img-circle" src="images/team/hugo.jpg" alt="">
+                                <h4>Hugo Gamboa</h4>
+                                <p class="text-muted">Principal Investigator</p>
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-divider-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-divider-item-small-left" style="padding-bottom: 50px;">
+                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider">
+                                            <div class="gdlr-core-divider-line-bold  gdlr-core-skin-divider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="https://pt.linkedin.com/in/hgamboa"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-member" href="#teamJR" data-toggle="modal">
+                                <img class="img-responsive img-circle" src="images/team/joao.jpg" alt="">
+                                <h4>João Rodrigues</h4>
+                                <p class="text-muted">Associated Researcher</p>
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-divider-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-divider-item-small-left" style="padding-bottom: 50px;">
+                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider">
+                                            <div class="gdlr-core-divider-line-bold  gdlr-core-skin-divider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="http:google.com"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-member" href="#teamDF" data-toggle="modal">
+                                <img class="img-responsive img-circle" src="images/team/duarte.jpg" alt="">
+                                <h4>Duarte Folgado</h4>
+                                <p class="text-muted">Associated Researcher</p>
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-divider-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-divider-item-small-left" style="padding-bottom: 50px;">
+                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider">
+                                            <div class="gdlr-core-divider-line-bold  gdlr-core-skin-divider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="http:google.com"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="team-member" href="#teamDB" data-toggle="modal">
+                                <img class="img-responsive img-circle" src="images/team/david.jpg" alt="">
+                                <h4>David Belo</h4>
+                                <p class="text-muted">Associated Researcher</p>
+                                <div class="gdlr-core-pbf-element">
+                                    <div class="gdlr-core-divider-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-divider-item-small-left" style="padding-bottom: 50px;">
+                                        <div class="gdlr-core-divider-line gdlr-core-skin-divider">
+                                            <div class="gdlr-core-divider-line-bold  gdlr-core-skin-divider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-inline social-buttons">
+                                    <li><a href="https://pt.linkedin.com/in/djsasilva"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="Contact" class="group">
+                    <div class="title" style="width: 50px; height: auto">
+                        <h3>CONTACT US</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="contactForm" name="sentMessage">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false" type="text">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address." aria-invalid="false" type="email">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number." aria-invalid="false" type="tel">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message." aria-invalid="false"></textarea>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix">
+
+                                    </div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <button type="submit" class="btn btn-xl">Send Message</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>

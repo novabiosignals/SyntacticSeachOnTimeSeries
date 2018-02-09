@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Keypad</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link rel="stylesheet" href="keyb.css" type="text/css">
+    <script type="text/javascript" src="keyb.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="column side" onload="FileLoader">
+        <input type="file" id="loadFile" class="loadFile" multiple size="50" onchange="FileLoader()">
+
+        <pre id="fileDisplay"></pre>
+
+        <form name="PreProcessing" id = "formPP" class="form" AUTOCOMPLETE="OFF">
+            <div class="popup" id="popupPP">
+                <label>
+                    Pre-Processing
+                    <input type="text" name="inputPP" id="PPfield" value="" size="20" class="entry">
+                    <pre id="ppdisplay"></pre>
+                </label>
+
+                <div id="keypadPP" class="keypad">
+                    <div id="row1PP">
+                        <input type="button" name="PP" value="&#x2631" id="high_pass" class="btns" style="margin: 15px 3px 3px 3px">
+                        <input type="button" name="PP" value="&#x2632" id="band_pass" class="btns">
+                        <input type="button" name="PP" value="&#x2634" id="low_pass" class="btns">
+                    </div>
+                    <div id="row2PP">
+                        <input type="button" name="PP" value="&#x223c" id="smooth" class="btns">
+                        <input type="button" name="PP" value="&#x2225" id="abs" class="btns">
+                        <input type="button" name="PP" value="&#x229a" id="white" class="btns">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form name="SymbolicConnotation" id = "formSC" class= "form" AUTOCOMPLETE="OFF">
+            <div class="popup" id="popupSC">
+                <label>
+                    Symbolic Connotation
+                    <input type="text" name="inputSC" id="SCfield" value="" size="20" class="entry">
+                    <pre id="scdisplay"></pre>
+                </label>
+
+
+                <div id="keypadSC" class="keypad">
+                    <div id="row3PP">
+                        <input type="button" name="SC" value="&#x21de" id="ampThr" class="btns">
+                        <input type="button" name="SC" value="&#x2195" id="ampDiff" class="btns">
+                    </div>
+                    <div id="row4PP">
+                        <input type="button" name="SC" value="&#x2020" id="diff1" class="btns">
+                        <input type="button" name="SC" value="&#x2021" id="diff2" class="btns">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form name="Search" class="form" AUTOCOMPLETE="OFF">
+            <div class="popup" id="popupS">
+                <label>
+                    Search
+                    <input type="text" name="inputS" id="Sfield" value="" size="20" class="entry">
+                    <pre id="search"></pre>
+                </label>
+
+            </div>
+        </form>
+    </div>
+    <div class="column big">
+        <svg id="visualisation1" width="1000" height="500"></svg>
+        <svg id="visualisation2" width="1000" height="500"></svg>
+    </div>
+</div>
+
+</body>
+</html>
+

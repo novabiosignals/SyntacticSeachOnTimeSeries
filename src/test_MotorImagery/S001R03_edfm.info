@@ -1,0 +1,73 @@
+Source: record eegmmidb/S001/S001R03.edf  Start: [16:15:00.000 12/08/2009]
+val has 65 rows (signals) and 20000 columns (samples/signal)
+Duration:     2:05
+Sampling frequency: 160 Hz  Sampling interval: 0.00625 sec
+Row	Signal	Gain	Base	Units
+1	Fc5.	1	0	uV
+2	Fc3.	1	0	uV
+3	Fc1.	1	0	uV
+4	Fcz.	1	0	uV
+5	Fc2.	1	0	uV
+6	Fc4.	1	0	uV
+7	Fc6.	1	0	uV
+8	C5..	1	0	uV
+9	C3..	1	0	uV
+10	C1..	1	0	uV
+11	Cz..	1	0	uV
+12	C2..	1	0	uV
+13	C4..	1	0	uV
+14	C6..	1	0	uV
+15	Cp5.	1	0	uV
+16	Cp3.	1	0	uV
+17	Cp1.	1	0	uV
+18	Cpz.	1	0	uV
+19	Cp2.	1	0	uV
+20	Cp4.	1	0	uV
+21	Cp6.	1	0	uV
+22	Fp1.	1	0	uV
+23	Fpz.	1	0	uV
+24	Fp2.	1	0	uV
+25	Af7.	1	0	uV
+26	Af3.	1	0	uV
+27	Afz.	1	0	uV
+28	Af4.	1	0	uV
+29	Af8.	1	0	uV
+30	F7..	1	0	uV
+31	F5..	1	0	uV
+32	F3..	1	0	uV
+33	F1..	1	0	uV
+34	Fz..	1	0	uV
+35	F2..	1	0	uV
+36	F4..	1	0	uV
+37	F6..	1	0	uV
+38	F8..	1	0	uV
+39	Ft7.	1	0	uV
+40	Ft8.	1	0	uV
+41	T7..	1	0	uV
+42	T8..	1	0	uV
+43	T9..	1	0	uV
+44	T10.	1	0	uV
+45	Tp7.	1	0	uV
+46	Tp8.	1	0	uV
+47	P7..	1	0	uV
+48	P5..	1	0	uV
+49	P3..	1	0	uV
+50	P1..	1	0	uV
+51	Pz..	1	0	uV
+52	P2..	1	0	uV
+53	P4..	1	0	uV
+54	P6..	1	0	uV
+55	P8..	1	0	uV
+56	Po7.	1	0	uV
+57	Po3.	1	0	uV
+58	Poz.	1	0	uV
+59	Po4.	1	0	uV
+60	Po8.	1	0	uV
+61	O1..	1	0	uV
+62	Oz..	1	0	uV
+63	O2..	1	0	uV
+64	Iz..	1	0	uV
+65	EDF Annotations	1	0	-
+
+To convert from raw units to the physical units shown
+above, subtract 'base' and divide by 'gain'.

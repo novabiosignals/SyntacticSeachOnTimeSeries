@@ -1,0 +1,25 @@
+.overlay{
+    fill: none;
+    pointer-events: all;
+}
+
+.focus{
+    opacity: 0.7;
+    background-color: black;
+}
+
+.focus circle{
+    fill: none;
+    stroke: #d93a46;
+    stroke-opacity: 1;
+    stroke-width: 3;
+    text-shadow: -1px 0 #2b67ff, 0 1px #2b67ff, 1px 0 #2b67ff, 0 -1px #2b67ff;
+}
+
+.focus text{
+    font-family: "Lato Black";
+    font-weight: bolder;
+    font-size:22px;
+    fill: #2f4158;
+    /*text-shadow: -1px 0 #2b67ff, 0 1px #2b67ff, 1px 0 #2b67ff, 0 -1px #2b67ff;*/
+}
