@@ -1,4 +1,4 @@
-# SyntacticSeachOnTimeSeries
+# SyntacticSearchOnTimeSeries
 
 The significant increase of fields that generate time series has converged into massive amounts of data
 with different behaviours and therefore different solutions to answer in terms of pattern and query search.
